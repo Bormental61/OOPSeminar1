@@ -20,7 +20,7 @@ public class Program {
         System.out.println(car1.model + " and " + car2.model + "start the race");
         int car1Speed = car1.speedChange();
         int car2Speed = car2.speedChange();
-        while (car1Speed < distance || car2Speed < distance) {
+        while (car1Speed <= distance | car2Speed <= distance) {
             System.out.println(car1.model + " has run " + car1Speed + " meters");
             System.out.println(car2.model + " has run " + car2Speed + " meters");
             System.out.println();
